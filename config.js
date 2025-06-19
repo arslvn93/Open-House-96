@@ -1,4 +1,4 @@
-{
+const config = {
   "property": {
     "streetAddress": "336 West Chestermere Drive",
     "city": "Chestermere",
@@ -118,6 +118,7 @@
     "repoName": "Open-House-96",
     "repoUrl": "https://github.com/arslvn93/Open-House-96",
     "tag": "Open House 336 West Chestermere Drive",
-    "siteId": "1005157497"
+    "siteId": "1005157497",
+    "netlifySiteId": "6d943adb-055a-4e5a-830c-f597adc8d5f5"
   }
-}
+};
