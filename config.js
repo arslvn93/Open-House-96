@@ -21,7 +21,7 @@ const config = {
   },
   "brokerage": {
     "name": "Greater Property Group",
-    "logoUrl": "",
+    "logoUrl": "https://static.showit.co/400/I76PcfBRdfuEObejOPwzPQ/264146/gpg-no-tagline-logo-white.png",
     "address": "5940 Macleod Trl SW #500, Calgary, AB T2H 2G4"
   },
   "openHouse": {
