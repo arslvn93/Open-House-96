@@ -590,12 +590,9 @@
 // Deployment Info
             if (updatedConfig.hasOwnProperty('deploymentInfo') && updatedConfig.deploymentInfo) {
                 // Update editable fields from form
-                if (updatedConfig.deploymentInfo.hasOwnProperty('netlifyUrl')) { // Corresponds to 'deploymentNetlifyUrl' input (Webhook URL GHL)
-                    updatedConfig.deploymentInfo.netlifyUrl = getVal('deploymentNetlifyUrl');
-                }
-                if (updatedConfig.deploymentInfo.hasOwnProperty('tag')) { // Corresponds to 'deploymentTag' input (CRM Tag)
-                    updatedConfig.deploymentInfo.tag = getVal('deploymentTag');
-                }
+                // Always attempt to set netlifyUrl and tag from the form if deploymentInfo exists
+                updatedConfig.deploymentInfo.netlifyUrl = getVal('deploymentNetlifyUrl');
+                updatedConfig.deploymentInfo.tag = getVal('deploymentTag');
                 // Readonly fields (deploymentRepoName, deploymentRepoUrl, deploymentNetlifyId)
                 // are preserved in updatedConfig.deploymentInfo from the initial clone of 'config'
                 // if they were present in the original config.deploymentInfo.
